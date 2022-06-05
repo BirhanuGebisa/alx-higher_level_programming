@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-#bire
+# 2-replace_in_list.py
+# birhanu geb
+
 
 def replace_in_list(my_list, idx, element):
     """Replace an element of a list at a specific position."""
