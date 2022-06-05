@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-# birhanu gebisa
+# 4-new_in_list.py
+# Ukonu Divine Chisom
 
 
 def new_in_list(my_list, idx, element):
@@ -9,4 +10,4 @@ def new_in_list(my_list, idx, element):
 
     copy = [x for x in my_list]
     copy[idx] = element
-    return (copy)i
+    return (copy)
