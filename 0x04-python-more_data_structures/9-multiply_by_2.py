@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-# 9-multiple_by_2.py
-# bire g 
-
-
 def multiply_by_2(a_dictionary):
-    """Return a new dictionary with all values multipled by 2."""
-    return ({k: a_dictionary[k] * 2 for k in a_dictionary})
+    dict_2 = a_dictionary.copy()
+    for a in dict_2.keys():
+        dict_2[a] *= 2
+    return (dict_2)
