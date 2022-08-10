@@ -1,12 +1,9 @@
-<p>
-<img width="260" height="170" src="https://davidjohncoleman.com/wp-djc/wp-content/uploads/2017/06/HBTN-Borderless-CMYK-Logo-Vertical-Color-Black@1200ppi-300x236.png" align="right" >
-</p>
 
 
 
 
 
-# :colombia: Python - SQL More queries                                          
+# :Ethiopia: Python - SQL More queries                                          
 - How to create a new MySQL user
 - How to manage privileges for a user to a database or table
 - What’s a PRIMARY KEY
