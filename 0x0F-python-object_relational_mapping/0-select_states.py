@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# List state database hbtn_0e_0_usa
+# List state database Alx_0e_0_usa
 # Sintax: ./0-select_states.py username password database_name
 import sys
 import MySQLdb
