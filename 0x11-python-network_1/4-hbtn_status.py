@@ -1,13 +1,11 @@
 #!/usr/bin/python3
-""" fetches http://alx-intranet/hbtn.io/status
-using the requests library.
 """
-
+fetch form a give website and display in a given format
+"""
 import requests
 
 if __name__ == "__main__":
-    r = requests.get("https://alx-intranet.hbtn.io/status")
-
+    res = requests.get("https://intranet.hbtn.io/status")
     print("Body response:")
-    print("\t- type: {}".format(type(r.text)))
-    print("\t- content: {}".format(r.text))
+    print("\t- type: {}".format(type(res.text)))
+    print("\t- content: {}".format(res.text))

@@ -1,16 +1,18 @@
 #!/usr/bin/python3
 """
-    Module for performing a GET request and printing error code if it exist
+a python script that takes in a url
+sends a request and displays the body
+of the response (decoded in utf-8).
 """
+
+
 import urllib.request
-import sys
+from sys import argv
 
 
 if __name__ == "__main__":
     try:
-        with urllib.request.urlopen(sys.argv[1]) as resp:
-            if resp is not None:
-                html = resp.read()
-                print(html.decode('utf-8'))
+        with urllib.request.urlopen(argv[1]) as res:
+            print(res.read().decode('utf-8'))
     except urllib.error.HTTPError as e:
-        print('Error code: {}'.format(e.code))
+        print("Error code: {}".format(e.code))

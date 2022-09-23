@@ -1,11 +1,16 @@
 #!/usr/bin/python3
 """
-    Module for making POST request.
+a Python script that takes in a URL and an email address,
+sends a POST request to the passed URL with the email as a parameter,
+and finally displays the body of the response.
 """
-import requests
-import sys
 
-if __name__ == "__main__":
-    resp = requests.post(sys.argv[1], data={'email': sys.argv[2]})
-    if resp is not None:
-        print(resp.text)
+
+import requests
+from sys import argv
+
+
+if __name__ == '__main__':
+    value = {'email': argv[2]}
+    r = requests.post(argv[1], data=value)
+    print(r.text)
